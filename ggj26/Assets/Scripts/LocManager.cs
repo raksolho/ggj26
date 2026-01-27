@@ -6,11 +6,19 @@ using TMPro;
 
 public class LocManager : MonoBehaviour
 {
-
     string[] suportedLanguages = {"English", "Português"};
     public string currentLanguage;
 
+    public static LocManager instance;
+
     private void Awake(){
+        if(instance==null){
+            instance=this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else{
+            Destroy(this);
+        }
         
         LocalizationManager.Read();
         LocalizationManager.Language = suportedLanguages[PlayerPrefs.GetInt("language", 0)];
