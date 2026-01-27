@@ -9,7 +9,7 @@ public class Dialogue : ScriptableObject
 
 
 
-    public string name;
+    public string dialogueName;
 
 
     public string[] sentences;
