@@ -6,12 +6,14 @@ public class Movement : MonoBehaviour
     private PlayerInputActions input;
     private Vector2 moveInput;
     private Animator animator;
+    private Rigidbody2D rb;
     public float speed = 5f;
 
     void Awake()
     {
         input = new PlayerInputActions();
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void OnEnable()
@@ -29,9 +31,9 @@ public class Movement : MonoBehaviour
         moveInput = input.Player.Move.ReadValue<Vector2>();
 
         Vector3 movement = new Vector3(moveInput.x, moveInput.y, 0);
-        transform.Translate(movement * speed * Time.deltaTime);
-        UpdateAnimation();
         
+        UpdateAnimation();
+        rb.linearVelocity = movement * speed;
     }
 
 
