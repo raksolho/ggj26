@@ -17,4 +17,7 @@ MonoBehaviour:
   - Name: Menus
     Id: 0
     TextAsset: {fileID: 4900000, guid: df628ae44671c3042a0299464932b2ef, type: 3}
+  - Name: Kleber
+    Id: 1134085401
+    TextAsset: {fileID: 4900000, guid: d7623e8b4b3e1d6469a148185a2c1754, type: 3}
   SaveFolder: {fileID: 102900000, guid: c392831e85f928548b8494fefd912562, type: 3}

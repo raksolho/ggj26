@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class DialogueTrigger : MonoBehaviour
 {
 
+    private PlayerInputActions input;
     public Dialogue dialogue;
     DialogueManager dialogueManager;
 
@@ -13,7 +14,8 @@ public class DialogueTrigger : MonoBehaviour
     void Awake()
     {
         dialogueManager = FindFirstObjectByType<DialogueManager>();
-
+        input = new PlayerInputActions();
+        input.Player.Enable();
     }
     public void TriggerDialogue()
     {
@@ -23,7 +25,7 @@ public class DialogueTrigger : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current.eKey.wasPressedThisFrame && dialogueManager != null && isInTrigger)
+        if (input.Player.Act.WasPressedThisFrame() && dialogueManager != null && isInTrigger)
         {
             if (dialogueManager.IsDialogueActive())
             {

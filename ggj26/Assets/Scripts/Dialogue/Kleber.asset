@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed8aa25450041c44c836d66300ca8c50, type: 3}
-  m_Name: Test
+  m_Name: Kleber
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  name: testeee
-  sentences:
-  - oi eu sou um teste
+  LocationKeys:
+  - Kleber1
+  - Kleber2
+  - Kleber3
+  - Kleber4
+  - Kleber5
