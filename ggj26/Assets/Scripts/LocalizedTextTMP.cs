@@ -10,7 +10,6 @@ namespace Assets.SimpleLocalization.Scripts
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class LocalizedTextTMP : MonoBehaviour
     {
-        [SerializeField]
         private string LocalizationKey;
 
         private TextMeshProUGUI textMeshPro;

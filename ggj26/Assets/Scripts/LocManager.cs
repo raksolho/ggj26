@@ -6,11 +6,11 @@ using TMPro;
 
 public class LocManager : MonoBehaviour
 {
+
     string[] suportedLanguages = {"English", "Português"};
-    public string currentLanguage;
+    public TextMeshProUGUI currentLanguage;
 
     public static LocManager instance;
-
     private void Awake(){
         if(instance==null){
             instance=this;
@@ -22,7 +22,7 @@ public class LocManager : MonoBehaviour
         
         LocalizationManager.Read();
         LocalizationManager.Language = suportedLanguages[PlayerPrefs.GetInt("language", 0)];
-        currentLanguage = suportedLanguages[PlayerPrefs.GetInt("language", 0)];
+        currentLanguage.text = suportedLanguages[PlayerPrefs.GetInt("language", 0)];
     }
 
     public void NextLanguage(){
@@ -34,7 +34,7 @@ public class LocManager : MonoBehaviour
             LocalizationManager.Language = suportedLanguages[0];
             PlayerPrefs.SetInt("language", 0);
         }
-        currentLanguage = suportedLanguages[PlayerPrefs.GetInt("language", 0)];
+        currentLanguage.text = suportedLanguages[PlayerPrefs.GetInt("language", 0)];
 
     }
 
@@ -47,6 +47,6 @@ public class LocManager : MonoBehaviour
             LocalizationManager.Language = suportedLanguages[suportedLanguages.Length-1];
             PlayerPrefs.SetInt("language", suportedLanguages.Length-1);
         }
-        currentLanguage = suportedLanguages[PlayerPrefs.GetInt("language", 0)];
+        currentLanguage.text = suportedLanguages[PlayerPrefs.GetInt("language", 0)];
     }
 }
