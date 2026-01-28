@@ -1,0 +1,30 @@
+using UnityEngine;
+
+public class MaskCarrier : MonoBehaviour
+{
+    public Mask currentMask;
+
+    public delegate void MaskChangeDelegate(Mask newMask);
+    public event MaskChangeDelegate OnMaskChanged;
+
+    public void SetMask(Mask maskName)
+    {
+        currentMask = maskName;
+        OnMaskChanged?.Invoke(currentMask);
+    }
+
+    public void SwapMask(MaskCarrier other)
+    {
+        Mask oldMask = currentMask;
+        currentMask = other.currentMask;
+        other.currentMask = oldMask;
+        OnMaskChanged?.Invoke(currentMask);
+        other.OnMaskChanged?.Invoke(other.currentMask);
+    }
+    public void SwapMask(GameObject other)
+    {
+        if(other.GetComponent<MaskCarrier>() == null) return;
+        MaskCarrier otherCarrier = other.GetComponent<MaskCarrier>();
+        SwapMask(otherCarrier);
+    }
+}
