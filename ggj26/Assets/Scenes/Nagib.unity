@@ -251,10 +251,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.16924666
-    y: 0.045454547
-    width: 0.6604748
-    height: 0.90909094
+    x: 0.13386726
+    y: 0.2457627
+    width: 0.7322654
+    height: 0.5084746
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 939644057}
   - component: {fileID: 939644056}
   - component: {fileID: 939644055}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MaskHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +480,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3162,7 +3162,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2430638884585554939, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.54
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2430638884585554939, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3201,28 +3201,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5092901999142508574, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 2.3333333
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092901999142508574, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 2.3333333
-      objectReference: {fileID: 0}
-    - target: {fileID: 5144188915038379663, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 22100000, guid: 42c8969366648224787a56ac9ff6bebd, type: 2}
-    - target: {fileID: 5920104469392970162, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_Size.x
-      value: 2.3333333
-      objectReference: {fileID: 0}
-    - target: {fileID: 5920104469392970162, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_Size.y
-      value: 2.3333333
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5989712801565068106, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5989712801565068106, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193304234332810972, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193304234332810972, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8080472653479822912, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

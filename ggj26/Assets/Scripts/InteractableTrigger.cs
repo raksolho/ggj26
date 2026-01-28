@@ -39,7 +39,7 @@ public class InteractableTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("PlayerInteractor"))
         {
             isInTrigger = true;
         }
@@ -47,7 +47,7 @@ public class InteractableTrigger : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("PlayerInteractor"))
         {
             isInTrigger = false;
         }

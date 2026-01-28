@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,15 +6,15 @@ public class Movement : MonoBehaviour
 {
     private PlayerInputActions input;
     private Vector2 moveInput;
-    private Animator animator;
+    private List<Animator> animators;
     private Rigidbody2D rb;
     public float speed = 5f;
 
     void Awake()
     {
         input = new PlayerInputActions();
-        animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        animators = new List<Animator>(GetComponentsInChildren<Animator>(true));
+        rb = GetComponentInChildren<Rigidbody2D>();
     }
 
     void OnEnable()
@@ -40,31 +41,39 @@ public class Movement : MonoBehaviour
     void UpdateAnimation()
     {
         Vector2 dir = moveInput;
-        animator.SetBool("WalkFront", false);
-        animator.SetBool("WalkBack", false);
-        animator.SetBool("WalkSide", false);
+
+        SetBoolForAllAnimators("WalkFront", false);
+        SetBoolForAllAnimators("WalkBack", false);
+        SetBoolForAllAnimators("WalkSide", false);
+
         if (dir.magnitude < 0.15f)
         {
-
             return;
         }
-
-
-
 
         if (Mathf.Abs(dir.y) >= Mathf.Abs(dir.x) * 1.2f)
         {
             if (dir.y > 0)
-                animator.SetBool("WalkBack", true);
+                SetBoolForAllAnimators("WalkBack", true);
             else
-                animator.SetBool("WalkFront", true);
+                SetBoolForAllAnimators("WalkFront", true);
         }
         else
         {
-            animator.SetBool("WalkSide", true);
+            SetBoolForAllAnimators("WalkSide", true);
             transform.localScale = new Vector3(dir.x > 0 ? -1 : 1, 1, 1);
         }
     }
 
+    private void SetBoolForAllAnimators(string param, bool value)
+    {
+        foreach (Animator animator in animators)
+        {
+            if(animator.enabled && animator.gameObject.activeInHierarchy)
+            {
+                animator.SetBool(param, value);
+            }
+        }
+    }
 
 }
