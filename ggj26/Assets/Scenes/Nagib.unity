@@ -251,10 +251,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.20995475
-    y: 0.24895689
-    width: 0.57918555
-    height: 0.5006954
+    x: 0.16924666
+    y: 0.045454547
+    width: 0.6604748
+    height: 0.90909094
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -3201,20 +3201,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5092901999142508574, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2.3333333
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092901999142508574, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2.3333333
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144188915038379663, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 42c8969366648224787a56ac9ff6bebd, type: 2}
+    - target: {fileID: 5920104469392970162, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
       propertyPath: m_Size.x
-      value: 0.51990104
+      value: 2.3333333
       objectReference: {fileID: 0}
-    - target: {fileID: 5092901999142508574, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+    - target: {fileID: 5920104469392970162, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
       propertyPath: m_Size.y
-      value: 0.5055692
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092901999142508574, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0035830736
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092901999142508574, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.010748506
+      value: 2.3333333
       objectReference: {fileID: 0}
     - target: {fileID: 5989712801565068106, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
       propertyPath: m_Name
@@ -3223,29 +3227,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5989712801565068106, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2408420915067004408}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
---- !u!1 &2408420915067004407 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5989712801565068106, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+--- !u!114 &2408420915067004408 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2339861839662783866, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
   m_PrefabInstance: {fileID: 2408420915067004406}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2408420915067004408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2408420915067004407}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35e775e8f98ddbd4ebdfe1f187e397e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MaskCarrier
-  currentMask: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

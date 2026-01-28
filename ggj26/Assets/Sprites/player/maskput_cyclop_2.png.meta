@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 283f5ff8e5b96e248ac94e07269b7706
+guid: 13cf0cfba9ecc4d4c92b001c4871abdb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6058240082244315683
-    second: blinkl_1_0
+      213: -6605652038726789673
+    second: maskput_cyclop_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blinkl_1_0
+      name: maskput_cyclop_2_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 19
         y: 7
-        width: 25
-        height: 54
+        width: 29
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd55bcd3ebecceba0800000000000000
-      internalID: -6058240082244315683
+      spriteID: 7d5dad118720454a0800000000000000
+      internalID: -6605652038726789673
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      blinkl_1_0: -6058240082244315683
+      maskput_cyclop_2_0: -6605652038726789673
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
