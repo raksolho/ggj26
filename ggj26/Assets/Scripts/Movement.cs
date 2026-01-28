@@ -31,35 +31,40 @@ public class Movement : MonoBehaviour
         moveInput = input.Player.Move.ReadValue<Vector2>();
 
         Vector3 movement = new Vector3(moveInput.x, moveInput.y, 0);
-        
+
         UpdateAnimation();
         rb.linearVelocity = movement * speed;
     }
 
 
-   void UpdateAnimation()
-{
-    Vector2 dir = moveInput  ;
-    if (dir.magnitude < 0.15f)
-        return;
-
-    animator.SetBool("WalkFront", false);
-    animator.SetBool("WalkBack", false);
-    animator.SetBool("WalkSide", false);
-
-    if (Mathf.Abs(dir.y) >= Mathf.Abs(dir.x) * 1.2f)
+    void UpdateAnimation()
     {
-        if (dir.y > 0)
-            animator.SetBool("WalkBack", true);
+        Vector2 dir = moveInput;
+        animator.SetBool("WalkFront", false);
+        animator.SetBool("WalkBack", false);
+        animator.SetBool("WalkSide", false);
+        if (dir.magnitude < 0.15f)
+        {
+
+            return;
+        }
+
+
+
+
+        if (Mathf.Abs(dir.y) >= Mathf.Abs(dir.x) * 1.2f)
+        {
+            if (dir.y > 0)
+                animator.SetBool("WalkBack", true);
+            else
+                animator.SetBool("WalkFront", true);
+        }
         else
-            animator.SetBool("WalkFront", true);
+        {
+            animator.SetBool("WalkSide", true);
+            transform.localScale = new Vector3(dir.x > 0 ? -1 : 1, 1, 1);
+        }
     }
-    else
-    {
-        animator.SetBool("WalkSide", true);
-        transform.localScale = new Vector3(dir.x > 0 ? 1 : -1, 1, 1);
-    }
-}
 
-    
+
 }
