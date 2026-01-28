@@ -5,3 +5,6 @@ SettingsButton,Settings,Configurações
 ExitButton,Quit Game,Sair
 BackButton,Back,Voltar
 SettingsTItle,Settings,Configurações
+PauseTitle,Pause,Pause
+ResumeButton,Resume,Resume
+MainMenuButton,Main Menu,Menu Principal
