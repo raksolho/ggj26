@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: SimpleMask
   m_EditorClassIdentifier: Assembly-CSharp::Mask
   maskName: SimpleMask
-  maskSprite: {fileID: 0}
+  maskSprite: {fileID: -1843197933104017171, guid: b85332e9ba24a8e40b1638c74cf31c91, type: 3}
+  maskOverlay: {fileID: 0}

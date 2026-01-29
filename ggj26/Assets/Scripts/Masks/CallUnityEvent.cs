@@ -8,6 +8,6 @@ public class CallUnityEvent : MonoBehaviour
 
     public void CallEvent()
     {
-        myEvent.Invoke();
+        myEvent?.Invoke();
     }
 }
