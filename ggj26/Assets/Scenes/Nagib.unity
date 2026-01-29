@@ -119,6 +119,38 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &381891190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8175101500290570757, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+  m_PrefabInstance: {fileID: 2408420915067004406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &381891194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381891190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79ad12c1b8bef2479842a4fbe8cd75f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CallUnityEvent
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2408420915067004413}
+        m_TargetAssemblyTypeName: MaskAnimator, Assembly-CSharp
+        m_MethodName: HandleMaskRemove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &531782806
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,10 +283,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.13386726
-    y: 0.2457627
-    width: 0.7322654
-    height: 0.5084746
+    x: 0.1701031
+    y: 0.045454547
+    width: 0.65979385
+    height: 0.90909094
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -406,6 +438,38 @@ Transform:
   - {fileID: 1352439894}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &787051111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1738171228309002199, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+  m_PrefabInstance: {fileID: 2408420915067004406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &787051115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787051111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79ad12c1b8bef2479842a4fbe8cd75f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CallUnityEvent
+  myEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2408420915067004413}
+        m_TargetAssemblyTypeName: MaskAnimator, Assembly-CSharp
+        m_MethodName: HandleMaskRemove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &939644054
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,16 +505,28 @@ MonoBehaviour:
   interactAction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2408420915067004408}
-        m_TargetAssemblyTypeName: MaskCarrier, Assembly-CSharp
-        m_MethodName: SwapMask
-        m_Mode: 0
+      - m_Target: {fileID: 2408420915067004413}
+        m_TargetAssemblyTypeName: MaskAnimator, Assembly-CSharp
+        m_MethodName: SetNextRecipient
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 939644056}
+          m_ObjectArgumentAssemblyTypeName: MaskCarrier, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: removeMask
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2408420915067004413}
+        m_TargetAssemblyTypeName: MaskAnimator, Assembly-CSharp
+        m_MethodName: RemoveMaskAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: removeMask
           m_BoolArgument: 0
         m_CallState: 2
   debounceSeconds: 0.2
@@ -2027,6 +2103,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1644931572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5989712801565068106, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+  m_PrefabInstance: {fileID: 2408420915067004406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1962761040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,22 +3305,44 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3165217450887949069, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5989712801565068106, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 2408420915067004413}
+    - targetCorrespondingSourceObject: {fileID: 1738171228309002199, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 787051115}
+    - targetCorrespondingSourceObject: {fileID: 8175101500290570757, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 381891194}
   m_SourcePrefab: {fileID: 100100000, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
 --- !u!114 &2408420915067004408 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2339861839662783866, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
   m_PrefabInstance: {fileID: 2408420915067004406}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1644931572}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35e775e8f98ddbd4ebdfe1f187e397e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MaskCarrier
+--- !u!114 &2408420915067004413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644931572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609d34c9201187c4aaf75aadb0a8a846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MaskAnimator
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

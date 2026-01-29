@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2050686549438392959}
   - component: {fileID: 6719563564560227365}
   - component: {fileID: 606163882551678922}
+  - component: {fileID: 3165217450887949069}
   m_Layer: 0
   m_Name: Red
   m_TagString: Player
@@ -113,6 +114,38 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3165217450887949069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738171228309002199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d87ecefd384ef434087b66212055547e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MaskObserver
+  maskCarrier: {fileID: 2339861839662783866}
+  observedMasks: []
+  onObtainedObservedMask:
+    m_PersistentCalls:
+      m_Calls: []
+  onLostObservedMask:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 606163882551678922}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: removeMask
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5989712801565068106
 GameObject:
   m_ObjectHideFlags: 0
