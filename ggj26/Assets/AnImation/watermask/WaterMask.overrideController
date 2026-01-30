@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterMask
+  m_Controller: {fileID: 9100000, guid: bf028e73d203d1c44a634968f57d3c7d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 2e649f6f04930e14f9dbc02b84a96594, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6699a5e8754d45340b1b120ac6ef28e5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 796a4c89df7c19b49b8656095dc2c521, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b14af92ec6d37454b9e6aef24e8a2411, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 776b5648b7826b24ebd57364d0183b4c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5e217f5ff2df42a4e8b00b8a7474c721, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 03e34951822a7fd4eb856d267b509155, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 36488f4f7e3e74348b01bc305fc13e3a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 91ec9704ef7066943ab0e2bf1e735665, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c444d19669a426448969123cf4a57d69, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8a129dc78db560b47b8dec0667289fbf, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1442fcf4b6175084c8d2fce63afa1dc9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e8a3b9516a1f2a94796cc4c702bc404a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4a961ece29477e04da75ee00a39a4e32, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 50730cebd5a782c48bc75bf97c89c54f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: accc4408cac5a744f918d4b1bdcd0101, type: 2}
