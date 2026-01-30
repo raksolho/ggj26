@@ -30,7 +30,7 @@ public class InteractableTrigger : MonoBehaviour
         {
             if (Time.time - lastInteractTime >= debounceSeconds)
             {
-                interactAction.Invoke(gameObject);
+                interactAction?.Invoke(gameObject);
                 lastInteractTime = Time.time;
             }
         }
