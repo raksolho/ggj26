@@ -15,3 +15,4 @@ MonoBehaviour:
   maskName: WaterMask
   maskSprite: {fileID: -1843197933104017171, guid: b85332e9ba24a8e40b1638c74cf31c91, type: 3}
   maskOverlay: {fileID: 1445626722733363151, guid: d046ec63c53ac8046a8c32fa7dec91b6, type: 3}
+  followCamera: 1
