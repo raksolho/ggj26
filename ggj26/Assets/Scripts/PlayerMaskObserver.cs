@@ -14,13 +14,6 @@ public class PlayerMaskObserver : MonoBehaviour
         var player = GameObject.Find("Player");
         maskCarrier = playerByTag.GetComponent<MaskCarrier>();
         var maskCarrier2 = player.GetComponent<MaskCarrier>();
-        Debug.Log($"    PlayerMaskObserver: Found player object: {player}");
-        Debug.Log($"player.tag{player.tag}");
-        Debug.Log($"player.tag{player.name}");
-        Debug.Log($"playerByTag.tag{playerByTag.tag}");
-        Debug.Log($"playerByTag.tag{playerByTag.name}");
-        Debug.Log($"maskCarrier{maskCarrier}");
-        Debug.Log($"maskCarrier2{maskCarrier2}");
         if (maskCarrier == null)
         {
             Debug.LogError("PlayerMaskObserver: No MaskCarrier found on Player");
