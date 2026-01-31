@@ -16810,22 +16810,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 86623121067884934, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 654220771523112867, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 821502711641094294, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2050686549438392959, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2430638884585554939, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.47
@@ -16864,22 +16848,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2430638884585554939, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3602883674950445584, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5338249009477071236, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5861247924410881794, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5973256949933141604, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5989712801565068106, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
