@@ -7,9 +7,9 @@ public class MaskCarrier : MonoBehaviour
     public delegate void MaskChangeDelegate(Mask newMask);
     public event MaskChangeDelegate OnMaskChanged;
 
-    public void SetMask(Mask maskName)
+    public void SetMask(Mask mask)
     {
-        currentMask = maskName;
+        currentMask = mask;
         OnMaskChanged?.Invoke(currentMask);
     }
 
