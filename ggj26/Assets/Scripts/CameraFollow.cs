@@ -41,7 +41,7 @@ public class CameraFollow : MonoBehaviour
             }
             else
             {
-                Vector3 desiredPosition = maskCarrier.currentMask.positionOffset;
+                Vector3 desiredPosition = maskCarrier.currentMask?.positionOffset ?? new Vector3(0, 0, -10);
                 transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, smoothTime);
             }
         }

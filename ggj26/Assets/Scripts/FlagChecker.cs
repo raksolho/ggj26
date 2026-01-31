@@ -1,12 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FlagChecker : MonoBehaviour
 {
     public List<string> requiredFlags;
     public List<string> forbiddenFlags;
-    public GameObject targetObject;
-
+    public UnityEvent onFlagsSatisfied;
+    public UnityEvent onFlagsUnsatisfied;
+    bool satisfied = false;
     public void SetFlags(string flag)
     {
         Flags.SetFlag(flag);
@@ -28,8 +30,20 @@ public class FlagChecker : MonoBehaviour
 
     void HandleFlagChange(List<string> _)
     {
-        bool satisfied = AreFlagsSatisfied();
-        targetObject.SetActive(satisfied);
+        bool newSatisfiedState = AreFlagsSatisfied();
+        if (newSatisfiedState == satisfied)
+        {
+            return;
+        }
+        satisfied = newSatisfiedState;
+        if (satisfied)
+        {
+            onFlagsSatisfied.Invoke();
+        }
+        else
+        {
+            onFlagsUnsatisfied.Invoke();
+        }
     }
 
     private bool AreFlagsSatisfied()
