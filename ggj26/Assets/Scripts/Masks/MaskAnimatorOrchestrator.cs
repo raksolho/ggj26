@@ -65,12 +65,12 @@ public class MaskAnimatorOrquestrator : MonoBehaviour
         return activeMaskAnimator;
     }
 
-    public void SetNextRecipient(MaskCarrier maskCarrier)
+    private void SetNextRecipient(MaskCarrier maskCarrier)
     {
         recipient = maskCarrier;
 
     }
-    public void RemoveMaskAnimation()
+    private void RemoveMaskAnimation()
     {
         SetTriggerForAllAnimators("removeMask");
 
