@@ -22,7 +22,6 @@ public class MaskOverlay : MonoBehaviour
         if (mask != null)
         {
             image.gameObject.SetActive(true);
-            Debug.Log("" + mask);
             image.sprite = mask.maskOverlay;
 
         }
