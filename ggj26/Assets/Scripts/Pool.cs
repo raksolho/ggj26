@@ -9,15 +9,15 @@ public class Pool : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other){
         if(other.tag == "Player" && player.currentMask?.name == "WaterMask"){
-            swimmingSprite.SetActive(true);
-            walkingSprite.SetActive(false);
+            swimmingSprite.GetComponent<SpriteRenderer>().enabled = true;
+            walkingSprite.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         if(other.tag == "Player" && player.currentMask?.name == "WaterMask"){
-            swimmingSprite.SetActive(false);
-            walkingSprite.SetActive(true);
+            swimmingSprite.GetComponent<SpriteRenderer>().enabled = false;
+            walkingSprite.GetComponent<SpriteRenderer>().enabled = true;
         }
         
     }

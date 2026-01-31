@@ -6,7 +6,7 @@ public class CameraFollow : MonoBehaviour
 
     Movement player;
     bool followPlayer = true;
-    public Vector3 offset= new Vector3(0,0,-10);
+    public Vector3 offset= new Vector3(0,10,-10);
     public float smoothTime = 0.3f;
     private Vector3 velocity = Vector3.zero;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -33,7 +33,7 @@ public class CameraFollow : MonoBehaviour
     {
         if (player != null && followPlayer)
         {
-            Vector3 desiredPosition = new Vector3(player.transform.position.x, player.transform.position.y, -10) ;
+            Vector3 desiredPosition = new Vector3(player.transform.position.x, player.transform.position.y, -10) + offset;
             transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, smoothTime);
         }
     }
