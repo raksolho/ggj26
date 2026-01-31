@@ -78,7 +78,7 @@ public class Movement : MonoBehaviour
     {
         foreach (Animator animator in animators)
         {
-            if(animator.enabled && animator.gameObject.activeInHierarchy)
+            if(animator.enabled && animator.gameObject.activeInHierarchy && animator.runtimeAnimatorController != null)
             {
                 animator.SetBool(param, value);
             }
