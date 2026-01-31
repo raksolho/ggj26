@@ -792,7 +792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &654220771523112867
 Transform:
   m_ObjectHideFlags: 0
@@ -876,7 +876,7 @@ Animator:
   m_GameObject: {fileID: 6160322067998250346}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 1caba273f27d0e4488926a0587fd96c5, type: 2}
+  m_Controller: {fileID: 22100000, guid: ede62b0848f00b44dbc59693037b8e4e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -928,7 +928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MaskAnimator
   animator: {fileID: 0}
-  mask: {fileID: 11400000, guid: 650907ded4f46f14e84dd2e606383ba5, type: 2}
+  mask: {fileID: 11400000, guid: 24740bae1bbe12449a638914b985777a, type: 2}
 --- !u!1 &6954671543914015189
 GameObject:
   m_ObjectHideFlags: 0
