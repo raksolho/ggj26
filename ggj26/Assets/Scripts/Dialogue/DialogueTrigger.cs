@@ -20,7 +20,7 @@ public class DialogueTrigger : MonoBehaviour
         dialogueManager = FindFirstObjectByType<DialogueManager>();
         input = new PlayerInputActions();
         input.Player.Enable();
-        forceStart=dialogue.forceStart;
+        forceStart = dialogue.forceStart;
     }
     public void TriggerDialogue()
     {
@@ -32,11 +32,11 @@ public class DialogueTrigger : MonoBehaviour
     {
         if ((forceStart || input.Player.Act.WasPressedThisFrame()) && dialogueManager != null && isInTrigger)
         {
-            forceStart=false;
+            forceStart = false;
             if (dialogueManager.IsDialogueActive())
             {
                 dialogueManager.DisplayNextSentence();
-                if (dialogueManager.getRemainingSentences() <= 0)
+                if (!dialogueManager.IsDialogueActive())
                 {
                     OnDialogueEnded?.Invoke(dialogue);
                 }
