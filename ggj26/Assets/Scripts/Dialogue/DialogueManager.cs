@@ -7,12 +7,13 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+   
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public GameObject dialoguePanel;
 
-    private Queue<string> LocationKeys;
+    public Queue<string> LocationKeys;
     private bool isDialogueActive = false;
 
     private Movement movement;
@@ -41,10 +42,13 @@ public class DialogueManager : MonoBehaviour
 
         DisplayNextSentence();
     }
-
+     public int getRemainingSentences()
+    {
+        return  LocationKeys.Count;
+    }
     public void DisplayNextSentence()
     {
-        if (LocationKeys.Count == 0)
+        if (getRemainingSentences() == 0)
         {
             EndDialogue();
             return;
