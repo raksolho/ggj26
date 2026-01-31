@@ -7,22 +7,29 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+   
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public GameObject dialoguePanel;
 
-    private Queue<string> LocationKeys;
+    public Queue<string> LocationKeys;
     private bool isDialogueActive = false;
+
+    private Movement movement;
 
     // Use this for initialization
     void Start()
     {
         LocationKeys = new Queue<string>();
+        movement = FindObjectOfType<Movement>();
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
+        nameText.text=dialogue.characterName;
+        movement.StopMovement();
+        movement.enabled = false;
         dialoguePanel.SetActive(true);
         isDialogueActive = true;
         nameText.text = dialogue.name;
@@ -36,10 +43,13 @@ public class DialogueManager : MonoBehaviour
 
         DisplayNextSentence();
     }
-
+     public int getRemainingSentences()
+    {
+        return  LocationKeys.Count;
+    }
     public void DisplayNextSentence()
     {
-        if (LocationKeys.Count == 0)
+        if (getRemainingSentences() == 0)
         {
             EndDialogue();
             return;
@@ -64,6 +74,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialoguePanel.SetActive(false);
         isDialogueActive = false;
+        movement.enabled = true;
         Debug.Log("End of conversation.");
     }
 

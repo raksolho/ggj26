@@ -6,9 +6,13 @@ using UnityEngine.InputSystem;
 public class DialogueTrigger : MonoBehaviour
 {
 
+    public delegate void DialogueChangeDelegate(Dialogue newDialogue);
+    public event DialogueChangeDelegate OnDialogueStarted;
+    public event DialogueChangeDelegate OnDialogueEnded;
     private PlayerInputActions input;
     public Dialogue dialogue;
     DialogueManager dialogueManager;
+    bool forceStart = false;
 
 
     void Awake()
@@ -16,6 +20,7 @@ public class DialogueTrigger : MonoBehaviour
         dialogueManager = FindFirstObjectByType<DialogueManager>();
         input = new PlayerInputActions();
         input.Player.Enable();
+        forceStart=dialogue.forceStart;
     }
     public void TriggerDialogue()
     {
@@ -25,15 +30,22 @@ public class DialogueTrigger : MonoBehaviour
 
     void Update()
     {
-        if (input.Player.Act.WasPressedThisFrame() && dialogueManager != null && isInTrigger)
+        if ((forceStart || input.Player.Act.WasPressedThisFrame()) && dialogueManager != null && isInTrigger)
         {
+            forceStart=false;
             if (dialogueManager.IsDialogueActive())
             {
+                if (dialogueManager.getRemainingSentences() == 0)
+                {
+                    OnDialogueEnded?.Invoke(dialogue);
+                }
                 dialogueManager.DisplayNextSentence();
+
             }
             else if (dialogue != null)
             {
                 TriggerDialogue();
+                OnDialogueStarted?.Invoke(dialogue);
             }
         }
     }

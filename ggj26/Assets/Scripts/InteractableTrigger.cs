@@ -33,6 +33,7 @@ public class InteractableTrigger : MonoBehaviour
                 interactAction?.Invoke(gameObject);
                 lastInteractTime = Time.time;
             }
+            
         }
     }   
 
