@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Flags : MonoBehaviour
+public static class Flags
 {
 
-    static List<string> flags = new List<string>();
+    public readonly static List<string> flags = new List<string>();
     public delegate void FlagChangeDelegate(List<string> flags);
     public static event FlagChangeDelegate OnFlagChange;
 	public static void SetFlag(string flag)

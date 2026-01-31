@@ -13,7 +13,7 @@ public class CameraFollow : MonoBehaviour
     void Start()
     {
  
-        player = FindObjectOfType<Movement>();
+        player = FindAnyObjectByType<Movement>();
     }
 
 
