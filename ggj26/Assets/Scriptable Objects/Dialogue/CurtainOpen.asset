@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   characterName: 
   LocationKeys:
-  - Pool2
+  - CurtainOpen
   forceStart: 1
