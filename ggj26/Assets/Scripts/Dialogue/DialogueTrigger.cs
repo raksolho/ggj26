@@ -35,11 +35,11 @@ public class DialogueTrigger : MonoBehaviour
             forceStart=false;
             if (dialogueManager.IsDialogueActive())
             {
-                if (dialogueManager.getRemainingSentences() == 0)
+                dialogueManager.DisplayNextSentence();
+                if (dialogueManager.getRemainingSentences() <= 0)
                 {
                     OnDialogueEnded?.Invoke(dialogue);
                 }
-                dialogueManager.DisplayNextSentence();
 
             }
             else if (dialogue != null)
@@ -52,7 +52,7 @@ public class DialogueTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("PlayerInteractor"))
         {
             isInTrigger = true;
         }
@@ -60,7 +60,7 @@ public class DialogueTrigger : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("PlayerInteractor"))
         {
             isInTrigger = false;
         }

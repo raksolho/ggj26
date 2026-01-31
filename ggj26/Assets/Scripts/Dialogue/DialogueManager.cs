@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-   
+
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
@@ -22,17 +22,17 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         LocationKeys = new Queue<string>();
-        movement = FindObjectOfType<Movement>();
+        movement = FindAnyObjectByType<Movement>();
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
-        nameText.text=dialogue.characterName;
+        Debug.Log("Starting dialogue" + dialogue.name);
+        nameText.text = dialogue.characterName;
         movement.StopMovement();
         movement.enabled = false;
         dialoguePanel.SetActive(true);
         isDialogueActive = true;
-        nameText.text = dialogue.name;
 
         LocationKeys.Clear();
 
@@ -43,9 +43,9 @@ public class DialogueManager : MonoBehaviour
 
         DisplayNextSentence();
     }
-     public int getRemainingSentences()
+    public int getRemainingSentences()
     {
-        return  LocationKeys.Count;
+        return LocationKeys.Count;
     }
     public void DisplayNextSentence()
     {
@@ -54,6 +54,7 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
+        Debug.Log("more than 0 sentences");
 
         string Key = LocationKeys.Dequeue();
         StopAllCoroutines();
@@ -68,6 +69,7 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += letter;
             yield return new WaitForSeconds(0.02f);
         }
+        Debug.Log("Finished displaying sentence: " + Key);
     }
 
     void EndDialogue()
