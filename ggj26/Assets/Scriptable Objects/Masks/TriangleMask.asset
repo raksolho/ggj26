@@ -15,4 +15,4 @@ MonoBehaviour:
   maskName: TriangleMask
   maskSprite: {fileID: -1843197933104017171, guid: b85332e9ba24a8e40b1638c74cf31c91, type: 3}
   maskOverlay: {fileID: -7751634958124378941, guid: a7b1b61d934b0d345b1cdeaa7416c781, type: 3}
-  followCamera: 1
+  followCamera: 0
