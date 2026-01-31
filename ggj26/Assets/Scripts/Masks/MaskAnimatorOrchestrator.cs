@@ -30,7 +30,7 @@ public class MaskAnimatorOrquestrator : MonoBehaviour
 
     public void HandleMaskRemove()
     {
-        swappingMasks = true;
+        // não precisa mais (espero)
     }
 
     private IEnumerator DelayedMaskSwap(MaskCarrier recipient)
