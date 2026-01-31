@@ -37,15 +37,7 @@ public class CameraFollow : MonoBehaviour
             transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, smoothTime);
         }
     }
-    // void Update()
-    // {
-    //     if (player != null && followPlayer)
-    //     {
-    //         Vector3 newPos = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
-    //         transform.position = newPos;
-    //     }
-
-    // }
+  
     void setFollowPlayer(Mask mask)
     {
         followPlayer = mask?.followCamera ?? true;
