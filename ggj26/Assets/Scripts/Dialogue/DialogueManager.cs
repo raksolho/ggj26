@@ -15,14 +15,19 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> LocationKeys;
     private bool isDialogueActive = false;
 
+    private Movement movement;
+
     // Use this for initialization
     void Start()
     {
         LocationKeys = new Queue<string>();
+        movement = FindObjectOfType<Movement>();
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
+        movement.StopMovement();
+        movement.enabled = false;
         dialoguePanel.SetActive(true);
         isDialogueActive = true;
         nameText.text = dialogue.name;
@@ -64,6 +69,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialoguePanel.SetActive(false);
         isDialogueActive = false;
+        movement.enabled = true;
         Debug.Log("End of conversation.");
     }
 

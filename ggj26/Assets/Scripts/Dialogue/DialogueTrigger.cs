@@ -45,7 +45,7 @@ public class DialogueTrigger : MonoBehaviour
             isInTrigger = true;
         }
     }
-
+    
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

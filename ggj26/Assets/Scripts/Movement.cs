@@ -42,9 +42,7 @@ public class Movement : MonoBehaviour
     {
         Vector2 dir = moveInput;
 
-        SetBoolForAllAnimators("WalkFront", false);
-        SetBoolForAllAnimators("WalkBack", false);
-        SetBoolForAllAnimators("WalkSide", false);
+       ResetAnimations();
 
         if (dir.magnitude < 0.15f)
         {
@@ -64,7 +62,18 @@ public class Movement : MonoBehaviour
             transform.localScale = new Vector3(dir.x > 0 ? -1 : 1, 1, 1);
         }
     }
+    private void ResetAnimations()
+    {
+        SetBoolForAllAnimators("WalkFront", false);
+        SetBoolForAllAnimators("WalkBack", false);
+        SetBoolForAllAnimators("WalkSide", false);
+    }
+    public void StopMovement()
 
+    {
+        ResetAnimations();
+        rb.linearVelocity = Vector2.zero;
+    }
     private void SetBoolForAllAnimators(string param, bool value)
     {
         foreach (Animator animator in animators)
