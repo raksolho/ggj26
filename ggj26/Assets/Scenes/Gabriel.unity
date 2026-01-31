@@ -1192,6 +1192,7 @@ GameObject:
   - component: {fileID: 645724562}
   - component: {fileID: 645724563}
   - component: {fileID: 645724564}
+  - component: {fileID: 645724565}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1348,14 +1349,36 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645724558}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a27627acb1e3c8c47b4c76518dbfbdce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   maskCarrier: {fileID: 2408420915067004408}
-  offset: {x: 0, y: 0, z: -10}
+  offset: {x: -3, y: 7, z: -10}
   smoothTime: 0.3
+--- !u!95 &645724565
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645724558}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &771265024
 GameObject:
   m_ObjectHideFlags: 0
@@ -9825,6 +9848,8 @@ PlayableDirector:
     value: {fileID: 408279460}
   - key: {fileID: 8603881809520509674, guid: 4d5f4ae221d65e64ba32cd381908559c, type: 2}
     value: {fileID: 2408420915067004417}
+  - key: {fileID: -4418405101726449759, guid: 4d5f4ae221d65e64ba32cd381908559c, type: 2}
+    value: {fileID: 645724565}
   m_ExposedReferences:
     m_References:
     - 02766ecb4f36aab4aab30546275ee9dc: {fileID: 1396855666}
@@ -12151,7 +12176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1810130070
 MonoBehaviour:
   m_ObjectHideFlags: 0

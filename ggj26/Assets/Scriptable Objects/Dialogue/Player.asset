@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8aa25450041c44c836d66300ca8c50, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  characterName: Player
   LocationKeys:
   - Player1
   - Player2
