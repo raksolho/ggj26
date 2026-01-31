@@ -9,4 +9,5 @@ public class Mask : ScriptableObject
     public Sprite maskOverlay;
 
     public bool followCamera = false;
+    public Vector3 positionOffset;
 }
