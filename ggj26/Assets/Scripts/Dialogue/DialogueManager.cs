@@ -22,7 +22,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         LocationKeys = new Queue<string>();
-        movement = FindObjectOfType<Movement>();
+        movement = FindAnyObjectByType<Movement>();
     }
 
     public void StartDialogue(Dialogue dialogue)
