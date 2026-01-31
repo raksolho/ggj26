@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        nameText.text=dialogue.characterName;
         movement.StopMovement();
         movement.enabled = false;
         dialoguePanel.SetActive(true);
