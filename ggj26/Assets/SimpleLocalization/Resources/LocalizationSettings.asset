@@ -26,6 +26,9 @@ MonoBehaviour:
   - Name: Pool
     Id: 69748533
     TextAsset: {fileID: 4900000, guid: b0ade51ece38bf3498605df3a953af87, type: 3}
+  - Name: Player
+    Id: 419110454
+    TextAsset: {fileID: 4900000, guid: e0f0f38bd7701734fa05826786f8b676, type: 3}
   - Name: Kleber
     Id: 1134085401
     TextAsset: {fileID: 4900000, guid: d7623e8b4b3e1d6469a148185a2c1754, type: 3}
