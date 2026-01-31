@@ -11,9 +11,7 @@ public class PlayerMaskObserver : MonoBehaviour
     void OnEnable()
     {
         var playerByTag = GameObject.FindGameObjectWithTag("Player");
-        var player = GameObject.Find("Player");
         maskCarrier = playerByTag.GetComponent<MaskCarrier>();
-        var maskCarrier2 = player.GetComponent<MaskCarrier>();
         if (maskCarrier == null)
         {
             Debug.LogError("PlayerMaskObserver: No MaskCarrier found on Player");

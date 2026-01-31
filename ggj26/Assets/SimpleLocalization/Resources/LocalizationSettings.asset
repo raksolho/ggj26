@@ -32,4 +32,7 @@ MonoBehaviour:
   - Name: Kleber
     Id: 1134085401
     TextAsset: {fileID: 4900000, guid: d7623e8b4b3e1d6469a148185a2c1754, type: 3}
+  - Name: Caixa
+    Id: 955109651
+    TextAsset: {fileID: 4900000, guid: 82d5ea52a5a9a81408e99dabc4a5bfb3, type: 3}
   SaveFolder: {fileID: 102900000, guid: c392831e85f928548b8494fefd912562, type: 3}
