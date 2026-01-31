@@ -344,7 +344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &114849353
 Transform:
   m_ObjectHideFlags: 0
@@ -9859,7 +9859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1386822355
 Transform:
   m_ObjectHideFlags: 0
@@ -9989,6 +9989,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1690054771}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1404092225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8175101500290570757, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+  m_PrefabInstance: {fileID: 2408420915067004406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1445645041
 GameObject:
   m_ObjectHideFlags: 0
@@ -12004,6 +12009,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1404092225}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDialogueEndEvent:
     m_PersistentCalls:
       m_Calls:
@@ -12066,6 +12083,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1404092225}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &1690054770
 GameObject:
@@ -18598,7 +18627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3765405289358231958, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4276337884755165567, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
       propertyPath: m_Enabled
