@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed8aa25450041c44c836d66300ca8c50, type: 3}
-  m_Name: UnlockedRedDoor
+  m_Name: PortavermelhaTrancada
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   characterName: 
   LocationKeys:
-  - Red Door Opened
-  forceStart: 1
+  - RedDoorLocked
+  forceStart: 0
