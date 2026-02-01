@@ -16,6 +16,7 @@ namespace Assets.SimpleLocalization.Scripts
 
         public void Start()
         {
+            LocalizationKey = this.name;
             textMeshPro = GetComponent<TextMeshProUGUI>();
             Localize();
             LocalizationManager.OnLocalizationChanged += Localize;
