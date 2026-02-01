@@ -2293,8 +2293,8 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: -0.37037036
-    width: 0.33333334
+    y: -0.09259259
+    width: 1
     height: 1.1851852
   near clip plane: 0.3
   far clip plane: 1000
@@ -2724,6 +2724,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1690054771}
     m_Modifications:
+    - target: {fileID: 3919967684470062375, guid: 1a47cc5740fcef148b7a93f46a6481fb, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 958622ea546b8eb4090a3bd3b1c8fe22, type: 2}
     - target: {fileID: 4309116158211071995, guid: 1a47cc5740fcef148b7a93f46a6481fb, type: 3}
       propertyPath: m_Name
       value: NPC (4)
@@ -11362,6 +11366,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1690054771}
     m_Modifications:
+    - target: {fileID: 3919967684470062375, guid: 1a47cc5740fcef148b7a93f46a6481fb, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: b101f0364a6afc34a8a476d42040a5fb, type: 2}
     - target: {fileID: 4309116158211071995, guid: 1a47cc5740fcef148b7a93f46a6481fb, type: 3}
       propertyPath: m_Name
       value: NPC (3)
