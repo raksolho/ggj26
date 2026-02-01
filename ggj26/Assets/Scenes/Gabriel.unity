@@ -2367,9 +2367,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: -0.09259259
+    y: 0
     width: 1
-    height: 1.1851852
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -2688,17 +2688,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3327f96b79a5df249baebb3cab7cd004, type: 3}
---- !u!114 &781133466 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3928144625476758076, guid: 3327f96b79a5df249baebb3cab7cd004, type: 3}
-  m_PrefabInstance: {fileID: 781133465}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c01e2a078058cf64f9ac1607d05eab6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::sceneManager
 --- !u!1 &791794742
 GameObject:
   m_ObjectHideFlags: 0
@@ -23976,6 +23965,7 @@ GameObject:
   - component: {fileID: 2106481368}
   - component: {fileID: 2106481369}
   - component: {fileID: 2106481370}
+  - component: {fileID: 2106481371}
   m_Layer: 0
   m_Name: Ending
   m_TagString: Untagged
@@ -24049,8 +24039,8 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 781133466}
-          m_TargetAssemblyTypeName: sceneManager, Assembly-CSharp
+        - m_Target: {fileID: 2106481371}
+          m_TargetAssemblyTypeName: SceneManagerRef, Assembly-CSharp
           m_MethodName: LoadScene
           m_Mode: 3
           m_Arguments:
@@ -24061,6 +24051,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &2106481371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106481367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5c496f6ccd34384e90c23a02fac248d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneManagerRef
 --- !u!1 &2122645157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3747000917767893035, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
