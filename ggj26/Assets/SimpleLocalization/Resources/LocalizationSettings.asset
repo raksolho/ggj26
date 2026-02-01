@@ -44,6 +44,9 @@ MonoBehaviour:
   - Name: PartyGuard2
     Id: 1870294720
     TextAsset: {fileID: 4900000, guid: 2ee10254c0546044d8cba066708d1114, type: 3}
+  - Name: WineGuy
+    Id: 1726971768
+    TextAsset: {fileID: 4900000, guid: 025eb04931ba465479f9a1a757a844ab, type: 3}
   - Name: PortavermelhaAberta
     Id: 628895953
     TextAsset: {fileID: 4900000, guid: 2e4e2f229d0da0e49b7e1c2ef2a54882, type: 3}
