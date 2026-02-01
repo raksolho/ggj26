@@ -10,7 +10,6 @@ public class AudioManager : MonoBehaviour
     public Sound[] sounds;
 
     public static AudioManager instance;
-    [SerializeField] Slider volumeSlider;
 
     void Awake()
     {
@@ -41,12 +40,6 @@ public class AudioManager : MonoBehaviour
         if(!PlayerPrefs.HasKey("musicVolume"))
         {
             PlayerPrefs.SetFloat("musicVolume", 1);
-            Load();
-        }
-
-        else
-        {
-            Load();
         }
     }
 
@@ -61,19 +54,15 @@ public class AudioManager : MonoBehaviour
         s.source.Play();
     }
 
-    public void ChangeVolume()
-    {
-        AudioListener.volume = volumeSlider.value;
-        Save();
-    }
 
-    private void Load()
+    public void ChangeVolume(float volume)
     {
-        volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        AudioListener.volume = volume;
+        Save();
     }
 
     private void Save()
     {
-        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+        PlayerPrefs.SetFloat("musicVolume", AudioListener.volume);
     }
 }

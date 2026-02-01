@@ -18,10 +18,21 @@ public class DialogueTrigger : MonoBehaviour
     void Awake()
     {
         dialogueManager = FindFirstObjectByType<DialogueManager>();
-        input = new PlayerInputActions();
-        input.Player.Enable();
         forceStart = dialogue.forceStart;
     }
+
+
+    void OnEnable()
+    {
+        input = new PlayerInputActions();
+        input.Player.Enable();
+    }
+
+    void OnDisable()
+    {
+        input.Player.Disable();
+    }
+
     public void TriggerDialogue()
     {
         FindFirstObjectByType<DialogueManager>().StartDialogue(dialogue);

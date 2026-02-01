@@ -24,6 +24,7 @@ public class OpenMenu : MonoBehaviour, IPlayerActions
 
     void OnDisable()
     {
+        input.Player.RemoveCallbacks(this);                      // Unregister callback interface IPlayerActions.
         input.Player.Disable();
     }
 
@@ -41,9 +42,15 @@ public class OpenMenu : MonoBehaviour, IPlayerActions
     {
         if (context.performed)
         {
-            pauseMenuUI.SetActive(!pauseMenuUI.activeSelf);
-            Time.timeScale = pauseMenuUI.activeSelf ? 0f : 1f;
-            playerMovement.enabled = !pauseMenuUI.activeSelf;
+            ToggleMenu();
+
         }
+    }
+
+    public void ToggleMenu()
+    {
+        pauseMenuUI.SetActive(!pauseMenuUI.activeSelf);
+        Time.timeScale = pauseMenuUI.activeSelf ? 0f : 1f;
+        playerMovement.enabled = !pauseMenuUI.activeSelf;
     }
 }
