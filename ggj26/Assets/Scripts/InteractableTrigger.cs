@@ -10,15 +10,25 @@ public class InteractableTrigger : MonoBehaviour
     public float debounceSeconds = .2f;
     private float lastInteractTime;
 
-	void OnValidate()
-	{
-		GetComponent<Collider2D>().isTrigger = true;
-	}
+    void OnValidate()
+    {
+        GetComponent<Collider2D>().isTrigger = true;
+    }
 
-	void Awake()
+    void OnEnable()
     {
         input = new PlayerInputActions();
         input.Player.Enable();
+    }
+
+    void OnDisable()
+    {
+        input.Player.Disable();
+    }
+
+    void Awake()
+    {
+
         lastInteractTime = Time.time;
     }
 
@@ -33,9 +43,9 @@ public class InteractableTrigger : MonoBehaviour
                 interactAction?.Invoke(gameObject);
                 lastInteractTime = Time.time;
             }
-            
+
         }
-    }   
+    }
 
 
     void OnTriggerEnter2D(Collider2D collision)
