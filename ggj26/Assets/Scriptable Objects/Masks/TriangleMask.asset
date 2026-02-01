@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TriangleMask
   m_EditorClassIdentifier: Assembly-CSharp::Mask
   maskName: TriangleMask
-  maskSprite: {fileID: -1843197933104017171, guid: b85332e9ba24a8e40b1638c74cf31c91, type: 3}
+  boxSprite: {fileID: 21300000, guid: 6f762ceb972d60d459fd626fda7b176c, type: 3}
   maskOverlay: {fileID: -7751634958124378941, guid: a7b1b61d934b0d345b1cdeaa7416c781, type: 3}
   followCamera: 0
   positionOffset: {x: -2.2, y: 6.22, z: -10}

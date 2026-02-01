@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RedMask
   m_EditorClassIdentifier: Assembly-CSharp::Mask
   maskName: RedMask
-  maskSprite: {fileID: -1843197933104017171, guid: b85332e9ba24a8e40b1638c74cf31c91, type: 3}
+  boxSprite: {fileID: 21300000, guid: 17e09e62273c2134991655cf6e44ee99, type: 3}
   maskOverlay: {fileID: -1843197933104017171, guid: b4ac30c860d29c149be85241a99d0625, type: 3}
   followCamera: 0
   positionOffset: {x: -1.4, y: 23.21, z: -10}

@@ -1369,10 +1369,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8276874861084343613, guid: ca2c0bf0e4abb234396f02b82018dec4, type: 3}
-      propertyPath: currentMask
-      value: 
-      objectReference: {fileID: 11400000, guid: 24740bae1bbe12449a638914b985777a, type: 2}
     - target: {fileID: 8466179539512037293, guid: ca2c0bf0e4abb234396f02b82018dec4, type: 3}
       propertyPath: m_Name
       value: Mask Box

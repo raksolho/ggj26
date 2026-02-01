@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Mask : ScriptableObject
 {
     public string maskName;
-    public Sprite maskSprite;
+    public Sprite boxSprite;
     public Sprite maskOverlay;
 
     public bool followCamera = false;
