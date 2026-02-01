@@ -53,6 +53,21 @@ MonoBehaviour:
   - Name: RedLady
     Id: 1247282143
     TextAsset: {fileID: 4900000, guid: d76b2c0f00e1a22469d188b8c0498975, type: 3}
+  - Name: MaskedRed
+    Id: 1906948242
+    TextAsset: {fileID: 4900000, guid: 72b00c31a2a50614095ed9a2896d4930, type: 3}
+  - Name: Malicious
+    Id: 1933756991
+    TextAsset: {fileID: 4900000, guid: 4cbfc327fa8ff294da6fb02fd86002fa, type: 3}
+  - Name: YellowLady
+    Id: 346643965
+    TextAsset: {fileID: 4900000, guid: babb4e5b645071d4f8165e73750ad07b, type: 3}
+  - Name: BlueLady
+    Id: 708505587
+    TextAsset: {fileID: 4900000, guid: e59b179be46e3aa49b6c1bc158c6a104, type: 3}
+  - Name: Plago2
+    Id: 1398061504
+    TextAsset: {fileID: 4900000, guid: 43e5f0a3bf37d9f4fb976e41455979b3, type: 3}
   - Name: RedGuy
     Id: 1859821012
     TextAsset: {fileID: 4900000, guid: 86e8b2cc0bc1f864c93a08b4dac61af6, type: 3}
