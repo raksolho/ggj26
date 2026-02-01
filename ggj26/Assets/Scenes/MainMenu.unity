@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 37875269}
   - component: {fileID: 37875268}
   - component: {fileID: 37875267}
+  - component: {fileID: 37875270}
   m_Layer: 5
   m_Name: Exit Button
   m_TagString: Untagged
@@ -278,8 +279,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 627087072}
-        m_TargetAssemblyTypeName: sceneManager, Assembly-CSharp
+      - m_Target: {fileID: 37875270}
+        m_TargetAssemblyTypeName: SceneManagerRef, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -328,6 +329,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37875265}
   m_CullTransparentMesh: 1
+--- !u!114 &37875270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37875265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5c496f6ccd34384e90c23a02fac248d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneManagerRef
 --- !u!1 &57442655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,17 +1254,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &627087072 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3928144625476758076, guid: 3327f96b79a5df249baebb3cab7cd004, type: 3}
-  m_PrefabInstance: {fileID: 887440494288608426}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c01e2a078058cf64f9ac1607d05eab6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::sceneManager
 --- !u!1 &659009161
 GameObject:
   m_ObjectHideFlags: 0
