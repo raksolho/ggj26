@@ -56,6 +56,9 @@ MonoBehaviour:
   - Name: BateBola
     Id: 1936307206
     TextAsset: {fileID: 4900000, guid: ffe8342ad92c4ce4285870b39093afa6, type: 3}
+  - Name: CreditsScene
+    Id: 925485361
+    TextAsset: {fileID: 4900000, guid: d433a2fa802b62a4b9d06fd98eed69b4, type: 3}
   - Name: RedLady
     Id: 1247282143
     TextAsset: {fileID: 4900000, guid: d76b2c0f00e1a22469d188b8c0498975, type: 3}
