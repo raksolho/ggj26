@@ -1380,11 +1380,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8566900619215657086, guid: ca2c0bf0e4abb234396f02b82018dec4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.43
+      value: 1.04
       objectReference: {fileID: 0}
     - target: {fileID: 8566900619215657086, guid: ca2c0bf0e4abb234396f02b82018dec4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.48
+      value: -0.83
       objectReference: {fileID: 0}
     - target: {fileID: 8566900619215657086, guid: ca2c0bf0e4abb234396f02b82018dec4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9838,7 +9838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.6156863}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11468,7 +11468,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.08074123, y: 0.10597286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -11478,7 +11478,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.83851755, y: 0.7880543}
   m_EdgeRadius: 0
 --- !u!114 &1351496676
 MonoBehaviour:
@@ -13359,7 +13359,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.01537478, y: -0.09210479}
+  m_Offset: {x: -0.0741778, y: 0.07646385}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13369,7 +13369,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.90381026, y: 1.1842096}
+  m_Size: {x: 0.7862042, y: 0.8470722}
   m_EdgeRadius: 0
 --- !u!114 &1517304979
 MonoBehaviour:
