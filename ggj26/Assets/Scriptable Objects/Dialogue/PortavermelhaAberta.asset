@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   characterName: 
   LocationKeys:
-  - RedGuy1
+  - RedDoorOpened
   forceStart: 0
