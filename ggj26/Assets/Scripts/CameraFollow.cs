@@ -35,6 +35,10 @@ public class CameraFollow : MonoBehaviour
     {
         if (player != null)
         {
+            if(player.transform.position.y > ythreshold)
+            {
+                followPlayer = false;
+            }
             if (followPlayer)
             {
                 Vector3 desiredPosition = new Vector3(player.transform.position.x, player.transform.position.y, -10) + offset;
