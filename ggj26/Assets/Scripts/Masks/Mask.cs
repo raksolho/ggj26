@@ -10,4 +10,5 @@ public class Mask : ScriptableObject
 
     public bool followCamera = false;
     public Vector3 positionOffset;
+    public Vector3 positionOffset2;
 }

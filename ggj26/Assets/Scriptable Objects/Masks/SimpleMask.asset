@@ -17,3 +17,4 @@ MonoBehaviour:
   maskOverlay: {fileID: -7913920175900842020, guid: cb67090b5636e9444a1d25c0d1b246b7, type: 3}
   followCamera: 0
   positionOffset: {x: -2.2, y: 6.22, z: -10}
+  positionOffset2: {x: -2.2, y: 20, z: -10}
