@@ -2124,10 +2124,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.473
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1688715098}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: ChangeVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1550599220
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,6 +2474,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064bbcfa075886546adf5da009beb5df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.SimpleLocalization.Scripts.LocalizedTextTMP
+--- !u!114 &1688715098 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7658655011567226296, guid: 83bee364e2692c14ba47a62437c2bc24, type: 3}
+  m_PrefabInstance: {fileID: 8134283430434274687}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee996a8e1321f3843bb8fbf151b905cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1710693526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,7 +2724,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3481,6 +3504,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7658655011567226296, guid: 83bee364e2692c14ba47a62437c2bc24, type: 3}
+      propertyPath: volumeSlider
+      value: 
+      objectReference: {fileID: 1484120211}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
