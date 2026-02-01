@@ -15653,7 +15653,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.67664623, y: 2.1088057}
+  m_Offset: {x: 2.96, y: 4.51}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15663,7 +15663,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.9080715, y: 0.37034035}
+  m_Size: {x: 1.99, y: 1.64}
   m_EdgeRadius: 0
 --- !u!1 &1773017548
 GameObject:
@@ -23648,6 +23648,7 @@ MonoBehaviour:
   maskCarrier: {fileID: 2408420915067004408}
   observedMasks:
   - {fileID: 11400000, guid: 0de733433bb491644b7e21523a7cfe0e, type: 2}
+  - {fileID: 11400000, guid: 13afca853d998d04c81bebc814a83b34, type: 2}
   onObtainedObservedMask:
     m_PersistentCalls:
       m_Calls:
@@ -23796,6 +23797,8 @@ PlayableDirector:
     value: {fileID: 791794743}
   - key: {fileID: -329625643900652283, guid: 31635f9da79ff6447873d17bc9afb166, type: 2}
     value: {fileID: 1033051469}
+  - key: {fileID: 3677397462265517791, guid: 31635f9da79ff6447873d17bc9afb166, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &2122645157 stripped
@@ -23808,6 +23811,36 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1572204904623428119, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
   m_PrefabInstance: {fileID: 2408420915067004406}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2122645168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122645157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 16ec3bc873388a74388a54f5c330901e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2122645157}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &2408420915067004406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23879,7 +23912,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3747000917767893035, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2122645168}
   m_SourcePrefab: {fileID: 100100000, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
 --- !u!114 &2408420915067004408 stripped
 MonoBehaviour:
