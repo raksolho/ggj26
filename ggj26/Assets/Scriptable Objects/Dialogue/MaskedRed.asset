@@ -15,4 +15,5 @@ MonoBehaviour:
   characterName: Ruan
   LocationKeys:
   - MaskedRed1
+  - MaskedRed2
   forceStart: 0
