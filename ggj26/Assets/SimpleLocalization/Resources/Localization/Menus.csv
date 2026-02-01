@@ -5,8 +5,8 @@ SettingsButton,Settings,Configurações
 ExitButton,Quit Game,Sair
 BackButton,Back,Voltar
 SettingsTItle,Settings,Configurações
-PauseTitle,Pause,Pause
-ResumeButton,Resume,Resume
+PauseTitle,Pause,Pausar
+ResumeButton,Resume,Continuar
 MainMenuButton,Main Menu,Menu Principal
 LanguageText,Language,Idioma
 VolumeText,Volume,Volume

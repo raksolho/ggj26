@@ -1143,7 +1143,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 971371483}
         m_TargetAssemblyTypeName: LocManager, Assembly-CSharp
         m_MethodName: PreviousLanguage
         m_Mode: 1
@@ -1544,7 +1544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 580e6025b0a84fa4a89960020d335e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LocManager
-  currentLanguage: {fileID: 249638125}
+  currentLanguage: {fileID: 659009162}
 --- !u!4 &971371484
 Transform:
   m_ObjectHideFlags: 0
@@ -2082,6 +2082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1484120210}
   - component: {fileID: 1484120211}
+  - component: {fileID: 1484120212}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -2162,10 +2163,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1688715098}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+      - m_Target: {fileID: 1484120212}
+        m_TargetAssemblyTypeName: AudioManagerRef, Assembly-CSharp
         m_MethodName: ChangeVolume
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2174,6 +2175,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1484120212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484120209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1b7dececfa14147998fd06186bc470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManagerRef
+  volumeSlider: {fileID: 1484120211}
 --- !u!1 &1550599220
 GameObject:
   m_ObjectHideFlags: 0
@@ -2508,17 +2522,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064bbcfa075886546adf5da009beb5df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.SimpleLocalization.Scripts.LocalizedTextTMP
---- !u!114 &1688715098 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7658655011567226296, guid: 83bee364e2692c14ba47a62437c2bc24, type: 3}
-  m_PrefabInstance: {fileID: 8134283430434274687}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee996a8e1321f3843bb8fbf151b905cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &1710693526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,6 +2683,7 @@ GameObject:
   - component: {fileID: 1749665171}
   - component: {fileID: 1749665170}
   - component: {fileID: 1749665169}
+  - component: {fileID: 1749665172}
   m_Layer: 5
   m_Name: New Game Button
   m_TagString: Untagged
@@ -2751,8 +2755,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 627087072}
-        m_TargetAssemblyTypeName: sceneManager, Assembly-CSharp
+      - m_Target: {fileID: 1749665172}
+        m_TargetAssemblyTypeName: SceneManagerRef, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
@@ -2801,6 +2805,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749665167}
   m_CullTransparentMesh: 1
+--- !u!114 &1749665172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749665167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5c496f6ccd34384e90c23a02fac248d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneManagerRef
 --- !u!1 &1828835377
 GameObject:
   m_ObjectHideFlags: 0
@@ -3107,7 +3123,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 971371483}
         m_TargetAssemblyTypeName: LocManager, Assembly-CSharp
         m_MethodName: NextLanguage
         m_Mode: 1

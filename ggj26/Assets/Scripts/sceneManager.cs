@@ -20,7 +20,8 @@ public class sceneManager : MonoBehaviour
 
     public void LoadScene(int buildIndex)
     {
-        SceneManager.LoadScene(buildIndex);
+        Time.timeScale =1;
+                SceneManager.LoadScene(buildIndex);
     }
 
     public void QuitGame()
