@@ -5,48 +5,48 @@ public class Door : MonoBehaviour
     public GameObject openedDoor;
     public GameObject closedDoor;
 
-    public GameObject openDoorDialogue;
-    public GameObject closedDoorDialogue;
-    public bool isDoorUnlocked=false;
+    public bool isOpen = false;
+    public bool isHidden = false;
 
+    public void Awake()
+    {
+        UpdateDoors();
+    }
+
+    public void OpenDoor()
+    {
+        isOpen = true;
+        UpdateDoors();
+    }
+
+    public void CloseDoor()
+    {
+        isOpen = false;
+        UpdateDoors();
+    }
 
     public void HideDoor()
     {
-        openedDoor.SetActive(false);
-        closedDoor.SetActive(false);
-        openDoorDialogue.SetActive(false);
-        closedDoorDialogue.SetActive(false);
-    }
-
-    public void UnlockDoor()
-    {
-        isDoorUnlocked = true;
+        isHidden = true;
+        UpdateDoors();
     }
     public void ShowDoor()
     {
-        if (isDoorUnlocked)
-        {
-            OpenDoor();
-        }
-        else
-        {
-            CloseDoor();
-        }
+        isHidden = false;
+        UpdateDoors();
     }
-    public void OpenDoor()
-    {
-        openedDoor.SetActive(true);
-        closedDoor.SetActive(true);
-        openDoorDialogue.SetActive(true);
-        closedDoorDialogue.SetActive(false);
 
-    }
-    public void CloseDoor()
+
+    public void UpdateDoors()
     {
-        openedDoor.SetActive(false);
-        closedDoor.SetActive(true);
-        openDoorDialogue.SetActive(false);
-        closedDoorDialogue.SetActive(true);
+        if (isHidden)
+        {
+            openedDoor.SetActive(false);
+            closedDoor.SetActive(false);
+            return;
+        }
+        openedDoor.SetActive(isOpen);
+        closedDoor.SetActive(!isOpen);
     }
 
 
