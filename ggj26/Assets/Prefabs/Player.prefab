@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Step
   stepSound: {fileID: 8300000, guid: ab1bb45d10b1a4840aafc2d8e5ca984a, type: 3}
+  swimSound: {fileID: 8300000, guid: 6196b2d2f9f4d99479fff191f9f2a9b5, type: 3}
 --- !u!1 &1738171228309002199
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Step
   stepSound: {fileID: 8300000, guid: ab1bb45d10b1a4840aafc2d8e5ca984a, type: 3}
+  swimSound: {fileID: 8300000, guid: 6196b2d2f9f4d99479fff191f9f2a9b5, type: 3}
 --- !u!1 &3717720483267127285
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Step
   stepSound: {fileID: 8300000, guid: ab1bb45d10b1a4840aafc2d8e5ca984a, type: 3}
+  swimSound: {fileID: 8300000, guid: 6196b2d2f9f4d99479fff191f9f2a9b5, type: 3}
 --- !u!1 &3747000917767893035
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Step
   stepSound: {fileID: 8300000, guid: ab1bb45d10b1a4840aafc2d8e5ca984a, type: 3}
+  swimSound: {fileID: 8300000, guid: 6196b2d2f9f4d99479fff191f9f2a9b5, type: 3}
 --- !u!1 &5546621830209197837
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Step
   stepSound: {fileID: 8300000, guid: ab1bb45d10b1a4840aafc2d8e5ca984a, type: 3}
+  swimSound: {fileID: 8300000, guid: 6196b2d2f9f4d99479fff191f9f2a9b5, type: 3}
 --- !u!1 &5989712801565068106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,6 +1248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Step
   stepSound: {fileID: 8300000, guid: ab1bb45d10b1a4840aafc2d8e5ca984a, type: 3}
+  swimSound: {fileID: 8300000, guid: 6196b2d2f9f4d99479fff191f9f2a9b5, type: 3}
 --- !u!1 &6343304252646308061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,6 +1420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Step
   stepSound: {fileID: 8300000, guid: ab1bb45d10b1a4840aafc2d8e5ca984a, type: 3}
+  swimSound: {fileID: 8300000, guid: 6196b2d2f9f4d99479fff191f9f2a9b5, type: 3}
 --- !u!1 &6954671543914015189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,6 +1616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Step
   stepSound: {fileID: 8300000, guid: ab1bb45d10b1a4840aafc2d8e5ca984a, type: 3}
+  swimSound: {fileID: 8300000, guid: 6196b2d2f9f4d99479fff191f9f2a9b5, type: 3}
 --- !u!1 &8080472653479822912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,3 +1894,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Step
   stepSound: {fileID: 8300000, guid: ab1bb45d10b1a4840aafc2d8e5ca984a, type: 3}
+  swimSound: {fileID: 8300000, guid: 6196b2d2f9f4d99479fff191f9f2a9b5, type: 3}
