@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   characterName: Renan
   LocationKeys:
-  - secondGuard1
+  - PartyGuard2
   forceStart: 0

@@ -41,9 +41,9 @@ MonoBehaviour:
   - Name: PortavermelhaTrancada
     Id: 1355487883
     TextAsset: {fileID: 4900000, guid: f0d40840552f4e34e88f36533f84d1f8, type: 3}
-  - Name: Guard2
+  - Name: PartyGuard2
     Id: 1870294720
-    TextAsset: {fileID: 4900000, guid: 9a1c659a1af20e04bacffbedb8ac8bd3, type: 3}
+    TextAsset: {fileID: 4900000, guid: 2ee10254c0546044d8cba066708d1114, type: 3}
   - Name: PortavermelhaAberta
     Id: 628895953
     TextAsset: {fileID: 4900000, guid: 2e4e2f229d0da0e49b7e1c2ef2a54882, type: 3}

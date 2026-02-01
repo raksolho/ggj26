@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 92574d531b97c80429d290111f584477
+guid: d07e77752ee31bc4ba1887fb334b1648
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7876261368599937490
-    second: bandit_walkd3_0
+      213: 4445256059127967231
+    second: maskput_og_3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,9 +48,9 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.16}
   spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bandit_walkd3_0
+      name: maskput_og_3_0
       rect:
         serializedVersion: 2
-        x: 18
+        x: 19
         y: 7
-        width: 32
-        height: 53
+        width: 30
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2ef776f306e1b290800000000000000
-      internalID: -7876261368599937490
+      spriteID: ffda9f375d8b0bd30800000000000000
+      internalID: 4445256059127967231
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bandit_walkd3_0: -7876261368599937490
+      maskput_og_3_0: 4445256059127967231
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
