@@ -11310,7 +11310,7 @@ Transform:
   m_GameObject: {fileID: 1251147307}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.37, y: 0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11813,6 +11813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Step
   stepSound: {fileID: 8300000, guid: ab1bb45d10b1a4840aafc2d8e5ca984a, type: 3}
+  swimSound: {fileID: 0}
 --- !u!82 &1396855671
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13760,7 +13761,7 @@ Transform:
   m_GameObject: {fileID: 1646830371}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.91, y: 16.02, z: 0}
+  m_LocalPosition: {x: 1.45, y: 7.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14271,7 +14272,7 @@ Transform:
   m_GameObject: {fileID: 1752417479}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.62, y: 0.77, z: 0}
+  m_LocalPosition: {x: 3.34, y: 8.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21574,6 +21575,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
   dialogue: {fileID: 11400000, guid: c77d0c209967e5146a8d4bf05e3a7674, type: 2}
+--- !u!1 &2122645157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3747000917767893035, guid: e30e505453b814a4e87addd7da65d0ef, type: 3}
+  m_PrefabInstance: {fileID: 2408420915067004406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2408420915067004406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21776,6 +21782,50 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.12952018
       objectReference: {fileID: 0}
+    - target: {fileID: 150844142451109990, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2408420915067004408}
+    - target: {fileID: 150844142451109990, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: walkingSprite
+      value: 
+      objectReference: {fileID: 2122645157}
+    - target: {fileID: 150844142451109990, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: swimmingSprite
+      value: 
+      objectReference: {fileID: 1013358840}
+    - target: {fileID: 1970907133543457129, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: maskCarrier
+      value: 
+      objectReference: {fileID: 2408420915067004408}
+    - target: {fileID: 1991022349609445291, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2408420915067004408}
+    - target: {fileID: 1991022349609445291, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: walkingSprite
+      value: 
+      objectReference: {fileID: 1821675984}
+    - target: {fileID: 1991022349609445291, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: swimmingSprite
+      value: 
+      objectReference: {fileID: 1013358840}
+    - target: {fileID: 2197485391911404136, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2278252678714139769, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2294302199755971337, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: maskCarrier
+      value: 
+      objectReference: {fileID: 2408420915067004408}
+    - target: {fileID: 2522292886185386797, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3248021582434684634, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
       propertyPath: player
       value: 
@@ -21788,9 +21838,33 @@ PrefabInstance:
       propertyPath: swimmingSprite
       value: 
       objectReference: {fileID: 1013358840}
+    - target: {fileID: 3289244652120796155, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409551809745491262, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2408420915067004408}
+    - target: {fileID: 4409551809745491262, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: walkingSprite
+      value: 
+      objectReference: {fileID: 2122645157}
+    - target: {fileID: 4409551809745491262, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: swimmingSprite
+      value: 
+      objectReference: {fileID: 1013358840}
     - target: {fileID: 5491562505725115162, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
       propertyPath: m_Name
       value: Pool
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786808175058071637, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: maskCarrier
+      value: 
+      objectReference: {fileID: 2408420915067004408}
+    - target: {fileID: 6542370139746752894, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6907609282649106013, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21832,6 +21906,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7273902851687141068, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: maskCarrier
+      value: 
+      objectReference: {fileID: 2408420915067004408}
     - target: {fileID: 7437269935890439517, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
       propertyPath: m_Size.x
       value: 1.8699121
@@ -21852,6 +21930,22 @@ PrefabInstance:
       propertyPath: maskCarrier
       value: 
       objectReference: {fileID: 2408420915067004408}
+    - target: {fileID: 8489470662176417694, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102341833289253387, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2408420915067004408}
+    - target: {fileID: 9102341833289253387, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: walkingSprite
+      value: 
+      objectReference: {fileID: 2122645157}
+    - target: {fileID: 9102341833289253387, guid: 91877fa055676d641ab8fe760d87823e, type: 3}
+      propertyPath: swimmingSprite
+      value: 
+      objectReference: {fileID: 1013358840}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4348422927527022430, guid: 91877fa055676d641ab8fe760d87823e, type: 3}

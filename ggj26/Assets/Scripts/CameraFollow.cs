@@ -56,6 +56,8 @@ public class CameraFollow : MonoBehaviour
         }
         else
         {
+            followPlayer = false;
+
             return maskCarrier.currentMask?.positionOffset2 ?? new Vector3(0, 0, -10);
         }
     }

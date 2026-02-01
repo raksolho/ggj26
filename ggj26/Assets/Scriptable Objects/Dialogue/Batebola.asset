@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   characterName: BateBola
   LocationKeys:
-  - BateBola
+  - BateBola1
+  - BateBola2
   forceStart: 0
