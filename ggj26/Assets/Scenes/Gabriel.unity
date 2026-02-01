@@ -735,7 +735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4309116158211071995, guid: 1a47cc5740fcef148b7a93f46a6481fb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6518339691289377051, guid: 1a47cc5740fcef148b7a93f46a6481fb, type: 3}
       propertyPath: m_Sprite
@@ -2367,8 +2367,8 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: -0.44444445
-    width: 1.0250001
+    y: -0.09259259
+    width: 1
     height: 1.1851852
   near clip plane: 0.3
   far clip plane: 1000
