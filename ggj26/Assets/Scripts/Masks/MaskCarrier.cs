@@ -21,6 +21,17 @@ public class MaskCarrier : MonoBehaviour
         OnMaskChanged?.Invoke(currentMask);
         other.OnMaskChanged?.Invoke(other.currentMask);
     }
+
+    public void SwapWithPlayer()
+    {
+        var playerByTag = GameObject.FindGameObjectWithTag("Player");
+        if (playerByTag == null) return;
+        MaskCarrier playerMaskCarrier = playerByTag.GetComponent<MaskCarrier>();
+        if (playerMaskCarrier == null) return;
+        SwapMask(playerMaskCarrier);
+    }
+
+
     public void SwapMask(GameObject other)
     {
         if(other.GetComponent<MaskCarrier>() == null) return;
