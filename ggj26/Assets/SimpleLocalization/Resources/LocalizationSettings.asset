@@ -35,4 +35,10 @@ MonoBehaviour:
   - Name: Caixa
     Id: 955109651
     TextAsset: {fileID: 4900000, guid: 82d5ea52a5a9a81408e99dabc4a5bfb3, type: 3}
+  - Name: Alavancas
+    Id: 1069876099
+    TextAsset: {fileID: 4900000, guid: 5cf04a2393280e744bc1b8ef43d2d621, type: 3}
+  - Name: Porta vermelha
+    Id: 1355487883
+    TextAsset: {fileID: 4900000, guid: 53d268a4808e0e845867ca1cd11fdb29, type: 3}
   SaveFolder: {fileID: 102900000, guid: c392831e85f928548b8494fefd912562, type: 3}

@@ -57,7 +57,7 @@ public class MaskAnimatorOrquestrator : MonoBehaviour
 
 
         UpdateActiveMaskAnimator(recipient.currentMask);
-        maskCarrier.SetMask(null);
+        // maskCarrier.SetMask(null);
         yield return null;
         animStateHash = activeMaskAnimator.animator.GetCurrentAnimatorStateInfo(0).shortNameHash;
         Debug.Log("Waiting for put mask animation to finish");

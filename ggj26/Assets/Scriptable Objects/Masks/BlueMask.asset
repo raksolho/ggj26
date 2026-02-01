@@ -15,3 +15,5 @@ MonoBehaviour:
   maskName: BlueMask
   maskSprite: {fileID: -1843197933104017171, guid: b85332e9ba24a8e40b1638c74cf31c91, type: 3}
   maskOverlay: {fileID: 3120921545988977193, guid: 44bd063583028c94cbe181aed748e310, type: 3}
+  followCamera: 0
+  positionOffset: {x: -1.4, y: 23.21, z: -10}

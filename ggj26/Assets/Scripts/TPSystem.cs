@@ -20,9 +20,11 @@ public class TPSystem : MonoBehaviour
             Debug.Log("Teleporting");
             collision.transform.position = exit.transform.position;
             cameraFollow.followPlayer = true;
-            
+
+
         }
     }
+     
 
 
 }
