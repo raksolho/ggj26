@@ -44,6 +44,15 @@ MonoBehaviour:
   - Name: PortavermelhaAberta
     Id: 628895953
     TextAsset: {fileID: 4900000, guid: 2e4e2f229d0da0e49b7e1c2ef2a54882, type: 3}
+  - Name: PartyGuard
+    Id: 1241348311
+    TextAsset: {fileID: 4900000, guid: 0cb851c08131344419b2748bdbf7ec4a, type: 3}
+  - Name: BateBola
+    Id: 1936307206
+    TextAsset: {fileID: 4900000, guid: ffe8342ad92c4ce4285870b39093afa6, type: 3}
+  - Name: RedLady
+    Id: 1247282143
+    TextAsset: {fileID: 4900000, guid: d76b2c0f00e1a22469d188b8c0498975, type: 3}
   - Name: RedGuy
     Id: 1859821012
     TextAsset: {fileID: 4900000, guid: 86e8b2cc0bc1f864c93a08b4dac61af6, type: 3}
