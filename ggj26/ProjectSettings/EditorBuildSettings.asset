@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 03a3bade36f74dd468361da85004d0d0
   - enabled: 1
-    path: Assets/Scenes/Gabriel.unity
+    path: Assets/Scenes/Game.unity
     guid: 2588c9ac74f2945408daa617c4ec86ef
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
